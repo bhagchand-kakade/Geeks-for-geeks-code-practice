@@ -1,2 +1,2 @@
 # Geeks-for-geeks-code-practice
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Collection of geeksforgeeks and LeetCode questions to ace the coding interview!
