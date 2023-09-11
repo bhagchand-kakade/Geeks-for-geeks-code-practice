@@ -25,17 +25,10 @@ class Solution{
         
         if(N==1)
         return 0;
-        int m=N/2;
-        int count=0;
+      
         for(int i=2;i*i<=N;i++){
-            if(N%i==0){
+            if(N%i==0)
                 return 0;
-            }
-            
-           /* count++;
-            count=3;*/
-           // break;
-            
         }
         return 1;
         
