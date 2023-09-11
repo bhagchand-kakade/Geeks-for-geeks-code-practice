@@ -22,22 +22,12 @@ class GFG
 class Solution{
     static int isPrime(int N){
         // code here
-        if (N <= 1) {
-        return 0;
-    }
-    int i = 2;
-    while (i * i <= N) {
-        if (N % i == 0) {
-            return 0;
-        }
-        i++;
-    }
-    return 1;
-        /*if(N==1)
+        
+        if(N==1)
         return 0;
         int m=N/2;
         int count=0;
-        for(int i=2;i*i<=m;i++){
+        for(int i=2;i*i<=N;i++){
             if(N%i==0){
                 return 0;
             }
@@ -46,8 +36,8 @@ class Solution{
             count=3;*/
            // break;
             
-        //}
-       // return 1;
+        }
+        return 1;
         
         /*if(N%2==0){
             return 0;
