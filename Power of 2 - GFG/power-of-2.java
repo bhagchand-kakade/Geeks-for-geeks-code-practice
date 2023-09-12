@@ -38,7 +38,7 @@ class Solution{
     public static boolean isPowerofTwo(long n){
         
         // Your code here
-        if(n==0)
+        /*if(n==0)
         return false;
         
         if(n==1)
@@ -47,12 +47,12 @@ class Solution{
         if(n%2!=0){
             return false;
         }
-        return isPowerofTwo(n/2);
+        return isPowerofTwo(n/2);*/  //fastet solution
         
-        /*double p=Math.log10(n)/Math.log10(2);
+        double p=Math.log10(n)/Math.log10(2);
         if(p-(int)p==0)
         return true;
-        return false;*/
+        return false;
         
         
     }
