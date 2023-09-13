@@ -36,11 +36,5 @@ class Solution {
             s2 += it;
         }
         return (sum-s2);
-        /*List l=Arrays.asList(array);
-        for(int i=0;i<n;i++){
-            if(l.contains(i))
-            return array[i];
-        }
-        return -1;*/
     }
 }
