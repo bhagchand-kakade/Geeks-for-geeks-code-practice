@@ -42,11 +42,23 @@ class Solution
         return -1;*/
         
         Map<Integer,Integer> map=new LinkedHashMap<>();
+        // map to store the element of array and the frequency of it
         if(k==1){
             return a[0];
         }
         for(int i=0;i<n;i++){
+            //if element is alredy present increse the frequency by 1
             if(map.containsKey(a[i])){
+                map.put(a[i],map.get(a[i])+1);
+            }else{
+                map.put(a[i],1);
+            }
+            
+            if(map.get(a[i])==k){
+                return a[i]; // return element if frequency is equal to k
+            }
+            
+           /* if(map.containsKey(a[i])){
                 int v=map.get(a[i])+1;
                 if(v>=k){
                     return a[i];
@@ -56,9 +68,10 @@ class Solution
             }
             else{
                 map.put(a[i],1);
-            }
+            }*/
         }
         
         return -1;
-    } 
+        
+          } 
 }
